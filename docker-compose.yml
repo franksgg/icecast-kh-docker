@@ -1,0 +1,25 @@
+services:
+
+  icecast:
+    container_name: icecast-kh
+    image: icecast-kh
+    volumes:
+      - ./config:/home/icecast/config
+      - ./log:/home/icecast/log
+      - ./docker-entrypoint.sh:/home/icecast/docker-entrypoint.sh
+    # restart: unless-stopped
+    environment:
+      - IC_LOCATION=Germany
+      # - IC_ADMIN_EMAIL=
+      # - IC_MAX_LISTENERS=
+      # - IC_MAX_SOURCES=
+      - IC_SOURCE_PASSWORD=hackme
+      # - IC_RELAY_PASSWORD=
+      - IC_ADMIN_PASSWORD=hackme
+      - IC_HOSTNAME=localhost
+      # - IC_MOUNT_PASSWORD=
+      #- IC_RELAY_SERVER=stream.urdt.lv
+    entrypoint: /home/icecast/docker-entrypoint.sh
+    command: "-c /home/icecast/config/icecast.xml"
+    ports:
+      - "8000:8000"
