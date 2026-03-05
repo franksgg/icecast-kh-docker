@@ -46,4 +46,9 @@ if [ -n "$IC_RELAY_SERVER" ]; then
     sed -i "s/<server>[^<]*<\/server>/<server>$IC_RELAY_SERVER<\/server>/g" $CONFIG_FILE
 fi
 
+
+
+
 exec icecast "$@"
+#
+#exec tail -f /dev/null

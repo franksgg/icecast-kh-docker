@@ -45,10 +45,10 @@
     <fileserve>1</fileserve>
     <paths>
 	<!-- basedir is only used if chroot is enabled -->
-	<basedir>/usr/share/icecast</basedir>
+	<basedir>/usr/local/share/icecast</basedir>
         <!-- Note that if <chroot> is turned on below, these paths must both
              be relative to the new root, not the original root -->
-	<logdir>/var/log/icecast</logdir>
+	<logdir>/home/icecast/log/</logdir>
         <webroot>/usr/share/icecast/web</webroot>
         <adminroot>/usr/share/icecast/admin</adminroot>
 	<alias source="/" dest="/index.html"/>

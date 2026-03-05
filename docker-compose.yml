@@ -1,8 +1,8 @@
 services:
 
   icecast:
-    container_name: icecast-kh
-    image: icecast-kh
+    container_name: icecast-fsg
+    image: icecast-fsg
     volumes:
       - ./config:/home/icecast/config
       - ./log:/home/icecast/log
