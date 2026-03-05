@@ -3,7 +3,7 @@
 CONFIG_FILE="/home/icecast/config/icecast.xml"
 
 # env
-
+#exec tail -f /dev/null
 set -e
 
 if [ -n "$IC_LOCATION" ]; then
@@ -51,4 +51,3 @@ fi
 
 exec icecast "$@"
 #
-#exec tail -f /dev/null

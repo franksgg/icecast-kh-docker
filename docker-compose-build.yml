@@ -3,6 +3,4 @@ services:
   icecast:
     build:
       context: ./
-      args:
-        IC_VERSION: 2.4.0-kh22
-        EXTRACT_CMD: tar xvfz
+
