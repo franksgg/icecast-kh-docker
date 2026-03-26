@@ -37,7 +37,7 @@ USER root
 RUN make install
 WORKDIR /home/icecast
 
-RUN rm -rf icecast-kh/*
+#RUN rm -rf icecast-kh/*
 
 EXPOSE 8000 
 
