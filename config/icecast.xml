@@ -1,5 +1,5 @@
 <icecast>
-    <admin>undisclosed</admin>
+    <admin>admin@localhost</admin>
     <location>Germany</location> 
     <limits>
         <clients>10</clients>
